@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ratpack-exec-1.5.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/io/ratpack/ratpack-exec/1.5.1/ratpack-exec-1.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

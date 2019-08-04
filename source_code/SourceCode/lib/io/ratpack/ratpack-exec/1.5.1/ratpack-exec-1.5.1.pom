@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.ratpack</groupId>
+  <artifactId>ratpack-exec</artifactId>
+  <version>1.5.1</version>
+  <name>ratpack-exec</name>
+  <description>The Ratpack Execution Model</description>
+  <url>http://www.ratpack.io</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>ratpack</id>
+      <name>Team Ratpack</name>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:https://ratpack@github.com/ratpack/ratpack</connection>
+    <developerConnection>scm:git@github.com:ratpack/ratpack.git</developerConnection>
+    <url>https://github.com/ratpack/ratpack</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>io.ratpack</groupId>
+      <artifactId>ratpack-base</artifactId>
+      <version>1.5.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.25</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-buffer</artifactId>
+      <version>4.1.17.Final</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-transport-native-epoll</artifactId>
+      <version>4.1.17.Final</version>
+      <classifier>linux-x86_64</classifier>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.reactivestreams</groupId>
+      <artifactId>reactive-streams</artifactId>
+      <version>1.0.0.final</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="guice-multibindings-4.1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/com/google/inject/extensions/guice-multibindings/4.1.0/guice-multibindings-4.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,50 @@
+{
+    -fx-primary : #2A2E37;
+    -fx-secondary : #1f4760;
+    -fx-primarytext : #B2B2B2;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-color-1:#1976D2;
+}
+
+.pane{
+    -fx-background-color: rgb(50,50,50);
+}
+
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-font-size: 10pt;
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+.root{
+    -fx-font-family: FontAwesome;
+}
+
+.button
+{
+    -fx-background-color : rgb(196, 196, 196);
+}
+
+.button:hover{
+    -fx-background-color : white;
+
+}
+
+.pane{
+    -fx-background-color : rgb(50, 50, 50);
+}
+
+.text-class {
+    -fx-fill: rgb(255,255,255);
+}
+
+.title-class
+{
+    -fx-font-size: 18pt;
+    -fx-fill: rgb(255,255,255);
+
+}

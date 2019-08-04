@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_sourcecode" default="compile.module.sourcecode">
+  <dirname property="module.sourcecode.basedir" file="${ant.file.module_sourcecode}"/>
+  
+  <property name="module.jdk.home.sourcecode" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.sourcecode" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.sourcecode" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.sourcecode" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="sourcecode.output.dir" value="${module.sourcecode.basedir}/out/production/SourceCode"/>
+  <property name="sourcecode.testoutput.dir" value="${module.sourcecode.basedir}/out/test/SourceCode"/>
+  
+  <path id="sourcecode.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="sourcecode.module.production.classpath">
+    <path refid="${module.jdk.classpath.sourcecode}"/>
+    <path refid="library.mysql-connector-java-8.0.15.classpath"/>
+    <fileset dir="${basedir}/lib/javafx/javafx-sdk-12/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+  </path>
+  
+  <path id="sourcecode.runtime.production.module.classpath">
+    <pathelement location="${sourcecode.output.dir}"/>
+    <path refid="library.mysql-connector-java-8.0.15.classpath"/>
+    <fileset dir="${basedir}/lib/javafx/javafx-sdk-12/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+  </path>
+  
+  <path id="sourcecode.module.classpath">
+    <path refid="${module.jdk.classpath.sourcecode}"/>
+    <pathelement location="${sourcecode.output.dir}"/>
+    <path refid="library.mysql-connector-java-8.0.15.classpath"/>
+    <fileset dir="${basedir}/lib/javafx/javafx-sdk-12/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+  </path>
+  
+  <path id="sourcecode.runtime.module.classpath">
+    <pathelement location="${sourcecode.testoutput.dir}"/>
+    <pathelement location="${sourcecode.output.dir}"/>
+    <path refid="library.mysql-connector-java-8.0.15.classpath"/>
+    <fileset dir="${basedir}/lib/javafx/javafx-sdk-12/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.sourcecode">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.sourcecode">
+    <patternset refid="excluded.from.module.sourcecode"/>
+  </patternset>
+  
+  <path id="sourcecode.module.sourcepath">
+    <dirset dir="${module.sourcecode.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.sourcecode" depends="compile.module.sourcecode.production,compile.module.sourcecode.tests" description="Compile module SourceCode"/>
+  
+  <target name="compile.module.sourcecode.production" depends="register.custom.compilers" description="Compile module SourceCode; production classes">
+    <mkdir dir="${sourcecode.output.dir}"/>
+    <javac2 destdir="${sourcecode.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.sourcecode}/javac">
+      <compilerarg line="${compiler.args.sourcecode}"/>
+      <bootclasspath refid="sourcecode.module.bootclasspath"/>
+      <classpath refid="sourcecode.module.production.classpath"/>
+      <src refid="sourcecode.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.sourcecode"/>
+    </javac2>
+    
+    <copy todir="${sourcecode.output.dir}">
+      <fileset dir="${module.sourcecode.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.sourcecode.tests" depends="register.custom.compilers,compile.module.sourcecode.production" description="compile module SourceCode; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.sourcecode" description="cleanup module">
+    <delete dir="${sourcecode.output.dir}"/>
+    <delete dir="${sourcecode.testoutput.dir}"/>
+  </target>
+</project>

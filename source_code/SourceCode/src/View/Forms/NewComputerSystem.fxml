@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="265.0" prefWidth="240.0" styleClass="pane" stylesheets="@../allViews.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FormControllers.NewSystemFormController">
+   <children>
+      <Text focusTraversable="true" layoutX="103.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-class" text="New Computer System" underline="true" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="MakeComboBox" editable="true" layoutX="40.0" layoutY="49.0" prefWidth="150.0" promptText="Make" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="49.0" />
+      <ComboBox fx:id="ModelComboBox" disable="true" editable="true" layoutX="40.0" layoutY="89.0" prefWidth="150.0" promptText="Model" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="89.0" />
+      <ComboBox fx:id="TypeComboBox" layoutX="31.0" layoutY="188.0" prefWidth="150.0" promptText="Type" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="170.0" />
+      <TextField fx:id="SerialNumberField" layoutX="40.0" layoutY="128.0" promptText="Serial Number" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="128.0" />
+      <Button layoutX="56.0" layoutY="236.0" mnemonicParsing="false" onAction="#submitSystem" text="Submit" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="230.0" />
+      <Button layoutX="135.0" layoutY="236.0" mnemonicParsing="false" onAction="#close" text="Cancel" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="230.0" />
+   </children>
+</AnchorPane>

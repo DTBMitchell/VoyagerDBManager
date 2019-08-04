@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Controller</OriginalElement>
+  <nodes>
+    <node x="373.53571428571445" y="2872.0">Controller.ViewerControllers.UserFocusController</node>
+    <node x="361.8853302611367" y="4492.0">Controller.MenuController</node>
+    <node x="680.2857142857144" y="3557.0">Controller.ViewerControllers.LoginViewController</node>
+    <node x="18.48398617511532" y="165.0">Controller.FormControllers.NewSystemFormController</node>
+    <node x="671.9210445468509" y="3840.0">Controller.Main</node>
+    <node x="1323.2018049155145" y="0.0">Controller.ViewerControllers.AccessoryInformationController</node>
+    <node x="1677.2018049155145" y="220.0">Controller.FormControllers.NewAccessoryController</node>
+    <node x="1035.921044546851" y="2418.0">Controller.FormControllers.AssignmentFormController</node>
+    <node x="66.53571428571445" y="3048.0">Controller.FormControllers.NewUserFormController</node>
+    <node x="33.16071428571445" y="3502.0">Controller.ListControllers.UserListController</node>
+    <node x="1185.2857142857144" y="1810.0">Controller.ViewerControllers.SystemInformationController</node>
+    <node x="766.4730798771124" y="652.0">Controller.ViewerControllers.AssignmentInformationController</node>
+    <node x="1223.421044546851" y="927.0">Controller.ListControllers.EquipmentListController</node>
+    <node x="810.2857142857144" y="1887.0">Controller.ListControllers.AssignmentListController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Controller.ListControllers.AssignmentListController" target="Controller.FormControllers.AssignmentFormController">
+      <point x="124.5" y="202.0" />
+      <point x="1100.7857142857144" y="2398.0" />
+      <point x="1093.7781874039938" y="2398.0" />
+      <point x="-77.1428571428572" y="-202.0" />
+    </edge>
+    <edge source="Controller.ViewerControllers.SystemInformationController" target="Controller.ListControllers.EquipmentListController">
+      <point x="-82.5" y="-279.0" />
+      <point x="1267.7857142857144" y="1790.0" />
+      <point x="1323.921044546851" y="1790.0" />
+      <point x="-67.0" y="279.0" />
+    </edge>
+    <edge source="Controller.MenuController" target="Controller.ListControllers.EquipmentListController">
+      <point x="96.75" y="-180.0" />
+      <point x="587.6353302611367" y="4472.0" />
+      <point x="1855.6125192012287" y="4472.0" />
+      <point x="1855.6125192012287" y="1780.0" />
+      <point x="1524.921044546851" y="1780.0" />
+      <point x="134.0" y="279.0" />
+    </edge>
+    <edge source="Controller.FormControllers.AssignmentFormController" target="Controller.ListControllers.EquipmentListController">
+      <point x="38.571428571428555" y="-202.0" />
+      <point x="1209.4924731182796" y="2388.0" />
+      <point x="1174.7857142857144" y="2388.0" />
+      <point x="1174.7857142857144" y="1790.0" />
+      <point x="1256.921044546851" y="1790.0" />
+      <point x="-134.0" y="279.0" />
+    </edge>
+    <edge source="Controller.ViewerControllers.AccessoryInformationController" target="Controller.Main">
+      <point x="83.49999999999994" y="301.0" />
+      <point x="1573.7018049155145" y="622.0" />
+      <point x="1593.921044546851" y="622.0" />
+      <point x="1593.921044546851" y="3810.0" />
+      <point x="917.4567588325654" y="3810.0" />
+      <point x="108.03571428571433" y="-301.0" />
+    </edge>
+    <edge source="Controller.ListControllers.EquipmentListController" target="Controller.FormControllers.NewAccessoryController">
+      <point x="111.66666666666663" y="-279.0" />
+      <point x="1502.5877112135177" y="632.0" />
+      <point x="1731.4518049155145" y="632.0" />
+      <point x="-54.25" y="81.0" />
+    </edge>
+    <edge source="Controller.FormControllers.NewUserFormController" target="Controller.Main">
+      <point x="71.25" y="114.0" />
+      <point x="280.28571428571445" y="3472.0" />
+      <point x="316.66071428571445" y="3472.0" />
+      <point x="316.66071428571445" y="3780.0" />
+      <point x="740.6710445468509" y="3780.0" />
+      <point x="-68.75" y="-301.0" />
+    </edge>
+    <edge source="Controller.ListControllers.UserListController" target="Controller.ViewerControllers.UserFocusController">
+      <point x="68.25" y="-114.0" />
+      <point x="237.91071428571445" y="3482.0" />
+      <point x="472.28571428571445" y="3482.0" />
+      <point x="-98.75" y="290.0" />
+    </edge>
+    <edge source="Controller.FormControllers.AssignmentFormController" target="Controller.ViewerControllers.SystemInformationController">
+      <point x="77.14285714285711" y="-202.0" />
+      <point x="1248.063901689708" y="2398.0" />
+      <point x="1240.2857142857144" y="2398.0" />
+      <point x="-110.0" y="279.0" />
+    </edge>
+    <edge source="Controller.FormControllers.NewSystemFormController" target="Controller.Main">
+      <point x="-67.75" y="136.0" />
+      <point x="86.23398617511532" y="632.0" />
+      <point x="21.160714285714448" y="632.0" />
+      <point x="21.160714285714448" y="3810.0" />
+      <point x="681.7424731182796" y="3810.0" />
+      <point x="-127.67857142857133" y="-301.0" />
+    </edge>
+    <edge source="Controller.MenuController" target="Controller.ListControllers.UserListController">
+      <point x="-32.25" y="-180.0" />
+      <point x="458.6353302611367" y="4462.0" />
+      <point x="105.57327188940098" y="4462.0" />
+      <point x="105.57327188940098" y="3820.0" />
+      <point x="78.66071428571445" y="3820.0" />
+      <point x="-91.0" y="114.0" />
+    </edge>
+    <edge source="Controller.FormControllers.AssignmentFormController" target="Controller.Main">
+      <point x="90.0" y="202.0" />
+      <point x="1260.921044546851" y="3780.0" />
+      <point x="858.5281874039938" y="3780.0" />
+      <point x="49.10714285714289" y="-301.0" />
+    </edge>
+    <edge source="Controller.ListControllers.EquipmentListController" target="Controller.Main">
+      <point x="67.0" y="279.0" />
+      <point x="1457.921044546851" y="1790.0" />
+      <point x="1536.764746543779" y="1790.0" />
+      <point x="1536.764746543779" y="3800.0" />
+      <point x="897.813901689708" y="3800.0" />
+      <point x="88.39285714285711" y="-301.0" />
+    </edge>
+    <edge source="Controller.FormControllers.NewAccessoryController" target="Controller.Main">
+      <point x="54.25" y="81.0" />
+      <point x="1839.9518049155145" y="3820.0" />
+      <point x="937.0996159754225" y="3820.0" />
+      <point x="127.67857142857144" y="-301.0" />
+    </edge>
+    <edge source="Controller.ListControllers.EquipmentListController" target="Controller.ViewerControllers.SystemInformationController">
+      <point x="0.0" y="279.0" />
+      <point x="1390.921044546851" y="1790.0" />
+      <point x="1432.7857142857144" y="1790.0" />
+      <point x="82.5" y="-279.0" />
+    </edge>
+    <edge source="Controller.ListControllers.AssignmentListController" target="Controller.ViewerControllers.AssignmentInformationController">
+      <point x="0.0" y="-202.0" />
+      <point x="976.2857142857144" y="1790.0" />
+      <point x="925.9730798771124" y="1790.0" />
+      <point x="2.8421709430404007E-14" y="554.0" />
+    </edge>
+    <edge source="Controller.ViewerControllers.SystemInformationController" target="Controller.FormControllers.AssignmentFormController">
+      <point x="0.0" y="279.0" />
+      <point x="1350.2857142857144" y="2398.0" />
+      <point x="1286.6353302611367" y="2398.0" />
+      <point x="115.71428571428572" y="-202.0" />
+    </edge>
+    <edge source="Controller.ViewerControllers.UserFocusController" target="Controller.FormControllers.AssignmentFormController">
+      <point x="0.0" y="-290.0" />
+      <point x="571.0357142857144" y="2842.0" />
+      <point x="1080.921044546851" y="2842.0" />
+      <point x="-90.0" y="202.0" />
+    </edge>
+    <edge source="Controller.ListControllers.UserListController" target="Controller.FormControllers.NewUserFormController">
+      <point x="-68.25" y="-114.0" />
+      <point x="101.41071428571445" y="3482.0" />
+      <point x="137.78571428571445" y="3482.0" />
+      <point x="-71.25" y="114.0" />
+    </edge>
+    <edge source="Controller.Main" target="Controller.ListControllers.UserListController">
+      <point x="-108.03571428571422" y="-301.0" />
+      <point x="701.3853302611367" y="3800.0" />
+      <point x="169.66071428571445" y="3800.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="Controller.ViewerControllers.UserFocusController" target="Controller.Main">
+      <point x="98.75" y="290.0" />
+      <point x="669.7857142857144" y="3760.0" />
+      <point x="779.9567588325654" y="3760.0" />
+      <point x="-29.464285714285666" y="-301.0" />
+    </edge>
+    <edge source="Controller.ViewerControllers.AssignmentInformationController" target="Controller.Main">
+      <point x="-127.6" y="554.0" />
+      <point x="798.3730798771123" y="1780.0" />
+      <point x="363.03571428571445" y="1780.0" />
+      <point x="363.03571428571445" y="3770.0" />
+      <point x="760.313901689708" y="3770.0" />
+      <point x="-49.10714285714289" y="-301.0" />
+    </edge>
+    <edge source="Controller.ViewerControllers.AssignmentInformationController" target="Controller.FormControllers.AssignmentFormController">
+      <point x="63.80000000000004" y="554.0" />
+      <point x="989.7730798771124" y="1790.0" />
+      <point x="1152.7857142857144" y="1790.0" />
+      <point x="1152.7857142857144" y="2398.0" />
+      <point x="1132.3496159754222" y="2398.0" />
+      <point x="-38.57142857142861" y="-202.0" />
+    </edge>
+    <edge source="Controller.FormControllers.AssignmentFormController" target="Controller.ViewerControllers.UserFocusController">
+      <point x="0.0" y="202.0" />
+      <point x="1170.921044546851" y="2852.0" />
+      <point x="702.7023809523811" y="2852.0" />
+      <point x="131.66666666666663" y="-290.0" />
+    </edge>
+    <edge source="Controller.ListControllers.EquipmentListController" target="Controller.ViewerControllers.AccessoryInformationController">
+      <point x="0.0" y="-279.0" />
+      <point x="1390.921044546851" y="632.0" />
+      <point x="1406.7018049155145" y="632.0" />
+      <point x="-83.5" y="301.0" />
+    </edge>
+    <edge source="Controller.ViewerControllers.LoginViewController" target="Controller.Main">
+      <point x="61.0" y="59.0" />
+      <point x="863.2857142857144" y="3760.0" />
+      <point x="819.2424731182796" y="3760.0" />
+      <point x="9.821428571428555" y="-301.0" />
+    </edge>
+    <edge source="Controller.ViewerControllers.UserFocusController" target="Controller.ViewerControllers.AssignmentInformationController">
+      <point x="-131.66666666666663" y="-290.0" />
+      <point x="439.3690476190478" y="2852.0" />
+      <point x="437.90065284178195" y="2852.0" />
+      <point x="437.90065284178195" y="1790.0" />
+      <point x="862.1730798771124" y="1790.0" />
+      <point x="-63.79999999999998" y="554.0" />
+    </edge>
+    <edge source="Controller.Main" target="Controller.ViewerControllers.LoginViewController">
+      <point x="-9.821428571428555" y="-301.0" />
+      <point x="799.5996159754225" y="3750.0" />
+      <point x="741.2857142857144" y="3750.0" />
+      <point x="-61.0" y="59.0" />
+    </edge>
+    <edge source="Controller.ListControllers.AssignmentListController" target="Controller.Main">
+      <point x="-41.5" y="202.0" />
+      <point x="934.7857142857144" y="3770.0" />
+      <point x="838.8853302611367" y="3770.0" />
+      <point x="29.46428571428578" y="-301.0" />
+    </edge>
+    <edge source="Controller.FormControllers.AssignmentFormController" target="Controller.ListControllers.AssignmentListController">
+      <point x="-115.71428571428578" y="-202.0" />
+      <point x="1055.2067588325651" y="2398.0" />
+      <point x="1017.7857142857144" y="2398.0" />
+      <point x="41.5" y="202.0" />
+    </edge>
+    <edge source="Controller.FormControllers.AssignmentFormController" target="Controller.ViewerControllers.AssignmentInformationController">
+      <point x="-2.8421709430404007E-14" y="-202.0" />
+      <point x="1170.921044546851" y="2398.0" />
+      <point x="1163.7857142857144" y="2398.0" />
+      <point x="1163.7857142857144" y="1780.0" />
+      <point x="1053.5730798771124" y="1780.0" />
+      <point x="127.60000000000002" y="554.0" />
+    </edge>
+    <edge source="Controller.ListControllers.UserListController" target="Controller.Main">
+      <point x="91.0" y="114.0" />
+      <point x="260.66071428571445" y="3790.0" />
+      <point x="721.0281874039938" y="3790.0" />
+      <point x="-88.39285714285711" y="-301.0" />
+    </edge>
+    <edge source="Controller.MenuController" target="Controller.Main">
+      <point x="32.25" y="-180.0" />
+      <point x="523.1353302611367" y="4462.0" />
+      <point x="809.4210445468509" y="4462.0" />
+      <point x="0.0" y="301.0" />
+    </edge>
+    <edge source="Controller.ViewerControllers.SystemInformationController" target="Controller.Main">
+      <point x="110.0" y="279.0" />
+      <point x="1460.2857142857144" y="2398.0" />
+      <point x="1467.421044546851" y="2398.0" />
+      <point x="1467.421044546851" y="3790.0" />
+      <point x="878.1710445468509" y="3790.0" />
+      <point x="68.75" y="-301.0" />
+    </edge>
+    <edge source="Controller.MenuController" target="Controller.ListControllers.AssignmentListController">
+      <point x="-96.75" y="-180.0" />
+      <point x="394.1353302611367" y="4472.0" />
+      <point x="0.0" y="4472.0" />
+      <point x="0.0" y="2398.0" />
+      <point x="851.7857142857144" y="2398.0" />
+      <point x="-124.5" y="202.0" />
+    </edge>
+    <edge source="Controller.ListControllers.EquipmentListController" target="Controller.FormControllers.NewSystemFormController">
+      <point x="-111.66666666666674" y="-279.0" />
+      <point x="1279.2543778801842" y="632.0" />
+      <point x="221.73398617511532" y="632.0" />
+      <point x="67.75" y="136.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.2789819376026273" x="672.1295041335711" y="2240.825191288993" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.beryx</groupId>
+  <artifactId>awt-color-factory</artifactId>
+  <version>1.0.0</version>
+  <name>Module awt-color-factory</name>
+  <description>The awt-color-factory artifact</description>
+  <url>https://github.com/beryx/awt-color-factory</url>
+  <developers>
+    <developer>
+      <id>siordache</id>
+      <name>Serban Iordache</name>
+    </developer>
+  </developers>
+  <scm>
+    <connection>https://github.com/beryx/awt-color-factory.git</connection>
+    <developerConnection>https://github.com/beryx/awt-color-factory.git</developerConnection>
+    <url>https://github.com/beryx/awt-color-factory</url>
+  </scm>
+  <licenses>
+    <license>
+      <name>The GNU General Public License Version 2</name>
+      <url>https://www.gnu.org/licenses/gpl-2.0.en.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+</project>

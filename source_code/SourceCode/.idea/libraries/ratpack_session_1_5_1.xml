@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ratpack-session-1.5.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/io/ratpack/ratpack-session/1.5.1/ratpack-session-1.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

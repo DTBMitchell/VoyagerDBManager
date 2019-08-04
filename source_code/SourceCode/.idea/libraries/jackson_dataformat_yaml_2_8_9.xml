@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jackson-dataformat-yaml-2.8.9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.8.9/jackson-dataformat-yaml-2.8.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

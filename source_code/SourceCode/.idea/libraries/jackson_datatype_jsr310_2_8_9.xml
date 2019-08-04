@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jackson-datatype-jsr310-2.8.9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.9/jackson-datatype-jsr310-2.8.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
